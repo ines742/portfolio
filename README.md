@@ -4,15 +4,13 @@ A modern, responsive, and animation-rich developer portfolio built to showcase m
 
 This project highlights clean UI architecture, smooth animations, and performance-focused frontend development.
 
-
 # Tech Stack
 
-   Vite – Fast development environment and build tool
-   React – Component-based UI architecture
-   JavaScript (ES6+) – Application logic and interactivity
-   HTML5
-   CSS3
-
+    Vite – Fast development environment and build tool
+    React – Component-based UI architecture
+    JavaScript (ES6+) – Application logic and interactivity
+    HTML5
+    CSS3
 
 # Styling & UI
 
@@ -20,17 +18,16 @@ This project highlights clean UI architecture, smooth animations, and performanc
     Custom CSS – Layout structure and component styling
     Font Awesome – Scalable vector icons
 
-
 # Animation
 
-   GSAP (GreenSock)
-   ScrollTrigger
-   @gsap/react  
+    GSAP (GreenSock)
+    ScrollTrigger
+    @gsap/react  
 
 
 # Integrations
 
-   EmailJS – Contact form functionality without a backend
+    EmailJS – Contact form functionality without a backend
 
 
 # Features
