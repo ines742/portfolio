@@ -1,12 +1,56 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and animation-rich developer portfolio built to showcase my skills, projects, and professional experience.
 
-Currently, two official plugins are available:
+This project highlights clean UI architecture, smooth animations, and performance-focused frontend development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+# Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   Vite – Fast development environment and build tool
+   React – Component-based UI architecture
+   JavaScript (ES6+) – Application logic and interactivity
+   HTML5
+   CSS3
+
+
+# Styling & UI
+
+    Tailwind CSS – Utility-first responsive styling
+    Custom CSS – Layout structure and component styling
+    Font Awesome – Scalable vector icons
+
+
+# Animation
+
+   GSAP (GreenSock)
+   ScrollTrigger
+   @gsap/react  
+
+
+# Integrations
+
+   EmailJS – Contact form functionality without a backend
+
+
+# Features
+
+    Responsive design (mobile-first approach)
+    Smooth scrolling navigation
+    Scroll-triggered animations
+    Animated experience timeline
+    Interactive UI components
+    Contact form with EmailJS integration
+    Clean and reusable component structure
+
+# Project Structure
+
+    Reusable React components (NavBar, GlowCard, TitleHeader, etc.)
+    Constants-driven content rendering
+    Section-based layout (Hero, Skills, Experience, Contact)
+
+# Installation
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your-repo-name
+    npm install
+    npm run dev
