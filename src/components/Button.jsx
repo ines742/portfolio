@@ -5,11 +5,12 @@
  */
 
 
-const Button = ({text, className, id }) => {
+const Button = ({text, className, id, onClick }) => {
   return (
     <a
      onClick={(e) => {
       e.preventDefault(); //prevent to reload the page
+      if(onClick) return onClick(e);
       const target = document.getElementById('counter')
 
       if(target && id){

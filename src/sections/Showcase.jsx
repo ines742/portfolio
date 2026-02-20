@@ -10,6 +10,7 @@ const Showcase = () => {
    const project1Ref = useRef(null);
    const project2Ref = useRef(null);
    const project3Ref = useRef(null);
+   
 
 
    useGSAP(() => {
@@ -42,34 +43,64 @@ const Showcase = () => {
         <div className='w-full'>
             <div className='showcaselayout'>
                 {/* LEFT SIDE */}
-                <div className='first-project-wrapper' ref={project1Ref} >
-                    <div className='image-wrapper'>
-                        <img src="/images/620Fab.jpg" alt="620 Fab project" />
-                    </div>
-                    <div className="text-content">
-                        <h2>Fully Responsive Website for 620 Fabrication Co — Mobile & 
-                            Desktop Experience</h2>
-                            <p className="text-white-50 md:text-xl">
-                                Developed with Next.js and React, styled using Tailwind CSS, 
-                                and written in TypeScript.
-                            </p>
-                    </div>
-                </div>
+                <a
+                  ref={project1Ref}
+                  href="/projects"
+                  className="group first-project-wrapper "
+                  >
+                  <div className="image-wrapper">
+                    <img
+                      src="/images/620Fab.jpg"
+                      alt="620 Fabrication Co"
+                      className=" group-hover:scale-95 transition-transform"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-opacity"/>
+                  <div className="text-content relative z-10">
+                    <h2>620 Fabrication Co</h2>
+                    <p className="text-white-50 md:text-xl">
+                      Fully Responsive Website, developed with Next.js and React, styled using Tailwind CSS,
+                      and written in TypeScript.
+                    </p>
+                  </div>
+                </a>
                 {/* RIGHT SIDE */}
-                <div className="project-list-wrapper overflow-hidden">
-                    <div  ref={project2Ref}>
-                        <div className="image-wrapper bg-[#f8d0fd]">
-                            <img src="/images/skinnyDrip.jpg" alt="Skinny Drip project" />
-                        </div>
-                        <h2>Skinny Drip Website</h2>
-                    </div>
-
-                    <div  ref={project3Ref}>
-                        <div className="image-wrapper bg-[#ffefdb]">
-                            <img src="/images/skinnyDrip.jpg" alt="Skinny Drip project" />
-                        </div>
-                        <h2>Skinny Drip Website</h2>
-                    </div>
+                <div className="project-list-wrapper overflow-hidden ">
+                    <a
+                      ref={project2Ref}
+                      href="/projects"
+                      className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+                      >
+                      <div className="image-wrapper bg-[#d0e2f9]">
+                        <img
+                          src="/images/skinnyDrip.jpg"
+                          alt="Skinny Drip project"
+                          className="group-hover:scale-110 transition-transform"
+                        />
+                      </div>
+                      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-opacity"/>
+                      <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white">
+                        Skinny Drip Website
+                      </h2>
+                    </a>
+                  
+                    <a
+                      ref={project3Ref}
+                      href="/projects"
+                      className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+                      >
+                      <div className="image-wrapper bg-[#dbe3ff]">
+                        <img
+                          src="/images/mortgage.png"
+                          alt="Mortgage Calculator"
+                          className=" group-hover:scale-110 transition-transform"
+                        />
+                      </div>
+                      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-opacity"/>
+                      <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white">
+                        Mortgage Calculator
+                      </h2>
+                    </a>
                 </div>
             </div>
         </div>

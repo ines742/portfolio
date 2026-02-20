@@ -142,13 +142,13 @@ section {
     }
 
     .first-project-wrapper {
-      @apply h-full flex flex-col justify-between xl:w-[60%];
+      @apply h-full flex flex-col justify-between xl:w-[60%] relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all;
 
       .image-wrapper {
         @apply xl:h-[70vh] md:h-[50vh] h-71 relative;
 
         img {
-          @apply w-full h-full object-cover rounded-xl absolute inset-0;
+          @apply w-full h-full object-cover rounded-xl absolute inset-0 ;
         }
       }
 

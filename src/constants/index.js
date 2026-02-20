@@ -15,7 +15,6 @@ export const navLinks = [
     }
 ]
 
-
 export const words = [
     { id: 'ideas', text: 'Ideas', imgPath: '/images/ideas.svg' },
     { id: 'concepts', text: 'Concepts', imgPath: '/images/concepts.svg' },
@@ -62,7 +61,7 @@ export const expCards = [
             `Developed responsive web applications using React and Tailwind CSS, creating modular 
             and reusable components, for scalable front-end solutions.`,
             `Updated and maintained WordPress websites, customizing themes, layouts, and widgets.`,
-            `Managing hosting and domain configurations.`
+            `Managing hosting and domain configurations through GoDaddy & Cloudflare.`
         ],
     },
     {
@@ -163,3 +162,35 @@ export const socialImgs = [
     }
 ]
 
+export const projects = [
+    {
+        name: '620 Fabrication Co',
+        desc: `A responsive site for showcasing 620 Fabrication products, pricing, and a contact 
+        form. It focuses on fast performance, clean semantics, and a mobile-first UI. Deployed on Render.`,
+        imgPath: '/images/620Fab.jpg',
+        tech: ['Next.js', 'Tailwind CSS', 'TypeScript', 'EmailJS', 'Font Awesome', 'Render'],
+        live: 'https://six20fabrication-g4u7.onrender.com',
+        github: 'https://github.com/ines742/620fabrication'
+    },
+    {
+        name: 'Skinny Drip',
+        desc: `A responsive, mobile-first single-page application for an esthetics services brand. 
+        I developed the currently live website at skinny-drip.com and later designed and built this 
+        redesigned version to enhance UX, performance, and overall visual impact.`,
+        imgPath: '/images/skinnyDrip.jpg',
+        tech: ['React', 'Vite', 'Tailwind CSS', 'Font Awesome'],
+        live: 'https://skinnydrip-website2025.onrender.com/',
+        github: 'https://github.com/ines742/skinnydrip-website2025'
+    },
+    {
+        name: 'Mortgage Calculator',
+        desc: `A simple mortgage calculator, responsive web app for estimating mortgage payments and understanding
+        how principal, interest, and term affect monthly payments.`,
+        imgPath: '/images/mortgage.png',
+        tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'PostCSS', 'ESLint'],
+        live: 'https://mortgagecalc-l82a.onrender.com',
+        github: 'https://github.com/ines742/mortgageCalc'
+    }
+    
+
+]

@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import { words } from "../constants";
 import { useGSAP } from "@gsap/react";
@@ -5,6 +6,7 @@ import gsap from "gsap";
 
 
 const Hero = () => {
+    const navigate = useNavigate();
  useGSAP(() => {
     gsap.fromTo('.hero-text h1',
         { y: 50, opacity: 0  },
@@ -40,12 +42,13 @@ const Hero = () => {
                       <h1>that deliver Results</h1>
                   </div>
                   <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                      I'm Torres, Junior developer with a passion for creating solutions.
+                      I'm Torres, a Junior developer with a passion for creating solutions.
                       </p>
                       <Button 
                        className="md:w-80 md:h-16 w-60 h-12"
                        id="button"
-                       text="See my Work" />
+                       text="See my Work" 
+                       onClick={() => navigate('/projects')}/>
                 </div>  
             </header>
 
