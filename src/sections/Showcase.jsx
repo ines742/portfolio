@@ -69,7 +69,7 @@ const Showcase = () => {
                     <a
                       ref={project2Ref}
                       href="/projects"
-                      className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+                      className="group project-2img"
                       >
                       <div className="image-wrapper bg-[#d0e2f9]">
                         <img
@@ -78,16 +78,16 @@ const Showcase = () => {
                           className="group-hover:scale-110 transition-transform"
                         />
                       </div>
-                      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-opacity"/>
-                      <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white">
-                        Skinny Drip Website
+                      <div className="transition-overlay"/>
+                      <h2 className="project-name">
+                        Skinny Drip Website 
                       </h2>
                     </a>
                   
                     <a
                       ref={project3Ref}
                       href="/projects"
-                      className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+                      className="group project-2img "
                       >
                       <div className="image-wrapper bg-[#dbe3ff]">
                         <img
@@ -96,8 +96,8 @@ const Showcase = () => {
                           className=" group-hover:scale-110 transition-transform"
                         />
                       </div>
-                      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-opacity"/>
-                      <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white">
+                      <div className="transition-overlay"/>
+                      <h2 className="project-name"> 
                         Mortgage Calculator
                       </h2>
                     </a>

@@ -140,7 +140,6 @@ section {
     .showcaselayout {
       @apply flex xl:flex-row flex-col gap-10 justify-between;
     }
-
     .first-project-wrapper {
       @apply h-full flex flex-col justify-between xl:w-[60%] relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all;
 
@@ -158,7 +157,6 @@ section {
         .badges {
           @apply flex gap-2 mb-4;
         }
-
         h2 {
           @apply text-2xl md:text-3xl lg:text-4xl font-bold;
         }
@@ -167,18 +165,20 @@ section {
 
     .project-list-wrapper {
       @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%];
-
-    
+      .project-2img {
+        @apply relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all;
+      }
       .image-wrapper {
         @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
       }
-
       img {
         @apply w-full h-full object-contain px-5 rounded-xl;
       }
-
-      h2 {
-        @apply text-lg md:text-xl lg:text-2xl font-semibold mt-5;
+      .transition-overlay {
+        @apply absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-opacity
+      }
+      .project-name {
+        @apply text-lg md:text-xl lg:text-2xl font-semibold mt-5 absolute bottom-4 left-4 text-white;
       }
     }
   }
